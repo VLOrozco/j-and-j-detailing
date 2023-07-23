@@ -4,5 +4,8 @@
 /* Global Styles */
 body {
   box-sizing: border-box;
-  
+}
+
+.custom-nav {
+  background-color: pink;
 }
