@@ -51,9 +51,9 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm fixed-top bg-body">
-      <div class="container-fluid d-flex flex-row justify-content-between">
-        <a class="navbar-brand px-4" href="#">
+    <nav class="navbar navbar-expand-sm bg-body pt-md-4">
+      <div class="container-fluid custom-nav-width d-flex flex-row justify-content-between">
+        <a class="navbar-brand px-1" href="#">
           <!-- LOGO -->
           <img src="./assets/logo/j-and-j-detailing_logo-light_transparent-bg.png" alt="J&J Detailing Logo" style="width:6rem;">
         </a>
@@ -70,9 +70,6 @@
               <a class="nav-link" href="#service">Service</a>
             </li>
             <li class="nav-item p-md-2 text-center">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item p-md-2 text-center">
               <a class="nav-link" href="#">Call Us</a>
             </li>
           </ul>
@@ -81,10 +78,71 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Hero Container -->
+  <main class="container-fluid">
+    <div class="row text-left p-3 custom-text-align">
       <!-- Hero Text -->
-      <!-- Hero Image -->
+      <div class="hero container">
+        <h1>
+          From grime to shine, we make your ride divine!
+        </h1>
+        <p>
+          J&J Detailing, run by two young entrepreneurs, is on a mission to make your ride incredible! Experience a refreshed transformation for your car, providing you with an enjoyable travel experience. Currently, our services are exclusively available to residents of Red Oak,TX. 
+          <br>
+          <blockquote>Call or text us to schedule your next car detailing!</blockquote>
+        </p>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="row m-auto custom-carousel-container">
+      <!-- Carousel Img -->
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/carousel-img/severin-demchuk-RYkZRwbmc1U-unsplash.jpg" class="d-block" alt="White car being cleaned with car wash soap suds">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Revive your ride!</h5>
+              <p>Let our sudsy magic bring the shine back to your car.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carousel-img/towfiqu-barbhuiya-5m5418Ng6t8-unsplash.jpg" class="d-block" alt="Spray cleaning the interior of a vehicle">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Interior rejuvenation!</h5>
+              <p>Experience a fresh and clean interior with spray and vacuum service.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carousel-img/vitali-adutskevich-J94B2ge-100-unsplash.jpg" class="d-block" alt="Clean vehicle interior dashboard">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Spotless dash delight!</h5>
+              <p>A pristine dashboard awaits you to drive in style.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/carousel-img/zuka-zurabishvili-r-ZENjRORPI-unsplash.jpg" class="d-block w-100" alt="Clean vehicle interior dashboard">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ride off in style!</h5>
+              <p>Our detail cleaning service adds splendor to every ride. Hop in and cruise with confidence!</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </main>
 
   <div id="service">
