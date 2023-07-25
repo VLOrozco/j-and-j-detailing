@@ -3,48 +3,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J&J Detailing</title>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-
-
-  <!-- Favicon/Logo Car Icon Attribution Information -->
-  <!-- <a href="https://www.flaticon.com/free-icons/car" title="car icons">Car icons created by kosonicon - Flaticon</a> -->
-
-
-  <!-- SERVICE ICONS -->
-  <!-- Bubbles Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/soap" title="soap icons">Soap icons created by catkuro - Flaticon</a> -->
-
-  <!-- Spray Bottle Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by photo3idea_studio - Flaticon</a> -->
-
-  <!-- Vacuum Cleaning Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/vacuum" title="vacuum icons">Vacuum icons created by Umeicon - Flaticon</a> -->
-
-  <!-- Clean Wiping Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Sir.Vector - Flaticon</a> -->
-
-  <!-- Sparkles Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Good Ware - Flaticon</a> -->
-
-
-  <!-- VEHICLE ICONS -->
-  <!-- Compact Car Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/automotive" title="automotive icons">Automotive icons created by Freepik - Flaticon</a> -->
-
-  <!-- Truck Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/pickup-truck" title="pickup truck icons">Pickup truck icons created by juicy_fish - Flaticon</a> -->
-
-  <!-- SUV Icon Attribution -->
-  <!-- <a href="https://www.flaticon.com/free-icons/suv" title="suv icons">Suv icons created by Freepik - Flaticon</a> -->
-
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Lexend:wght@100;200;300;400;500&display=swap" rel="stylesheet">
-  <!-- BoostrapCDN; CDN for Bootstrap, Font Awesome, Bootswatch and Bootstrap Icons -->
+
+  <!-- BoostrapCDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
   <!-- Custom CSS Styles Sheet -->
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -53,15 +23,16 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-body pt-md-4 mb-1 mb-sm-2 mb-lg-3">
       <div class="container-fluid custom-nav-width d-flex flex-sm-column justify-content-between">
-        <a class="navbar-brand px-1 order-sm-2" href="#">
+        <a class="navbar-brand px-1 order-sm-1" href="#">
           <!-- LOGO -->
           <img src="./assets/logo/j-and-j-detailing_logo-light_transparent-bg.png" alt="J&J Detailing Logo">
         </a>
 
-        <button class="navbar-toggler order-sm-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse order-sm-2" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto px-4">
             <li class="nav-item p-md-2 text-center">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -73,7 +44,9 @@
               <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item p-md-2 text-center">
-              <a class="nav-link" href="#">Call Us</a>
+              <button class="btn btn-phone-call rounded-5 nav-btn">
+                <a href="tel:123456789" class="btn-link">Call Us</a>
+              </button>
             </li>
           </ul>
         </div>
@@ -153,7 +126,7 @@
   </main>
 
   <!-- Service -->
-  <div id="service" class="container-fluid d-flex flex-column flex-lg-row mt-lg-5 mb-3 mb-lg5">
+  <div id="service" class="container-fluid d-flex flex-column flex-lg-row mt-lg-5 mb-5">
     <div class="container icon-container order-1 order-lg-2">
       <div class="container circle-container">
         <div class="circle-center">
@@ -196,18 +169,63 @@
         </p>
       </div> <!-- .service-text end -->
     </div> <!-- .text-container end -->
-
   </div> <!-- #service end -->
 
-  <div id="pricing">
-    <!-- Pricing -->
-  </div>
+  <!-- Pricing -->
+  <div id="pricing" class="container-fluid pt-5 pb-5 outer-pricing-container">
+    <div class="container pricing-container mt-5 mb-5">
+      <div class="container pricing-text mb-5">
+        <h2 class="container text-center">Affordable Pricing for Quality Care.</h2>
+      </div>
 
+      <div class="cards-container container d-flex flex-column flex-md-row flex-2 justify-content-between align-items-center align-items-md-center">
+        <div class="card p-2 rounded-5">
+          <img src="./assets/vehicle-icons/compact.png" class="card-img-top" alt="compact car icon">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <h6>Compact Car</h6>
+              <p class="price">$60</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-2 rounded-5">
+          <img src="./assets/vehicle-icons/pickup-truck.png" class="card-img-top" alt="pickup-truck icon">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <h6>Trucks</h6>
+              <p class="price">$70</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-2 rounded-5">
+          <img src="./assets/vehicle-icons/suv.png" class="card-img-top" alt="suv icon">
+          <div class="card-body">
+            <div class="card-text text-center">
+              <h6>SUV's</h6>
+              <p class="price">$80</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .cards-container end -->
+
+      <div class="container button-container d-flex justify-content-center mt-5">
+        <button class="btn btn-phone-call rounded-5 pricing-btn">
+          <a href="tel:123456789" class="btn-link">Call Us</a>
+        </button>
+      </div>
+
+    </div> <!-- .pricing-container end -->
+  </div> <!-- #pricing end -->
+
+  <!-- Contact Information -->
   <div id="cta">
-    <!-- Contact Information -->
-  </div>
 
-  <!-- FOOTER -->
+
+
+  </div> <!-- #cta end -->
+
+
+  <!-- Footer -->
   <footer>
 
 
