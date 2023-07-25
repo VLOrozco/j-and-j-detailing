@@ -26,9 +26,6 @@ body {
 }
 
 /* MAIN */
-main {
-  margin-bottom: 10em;
-}
 /* main text */
 .hero {
   min-width: 275px;
@@ -98,21 +95,9 @@ blockquote {
 
 /* SERVICE SECTION */
 #service {
-  margin-top: 20rem;
   /* background-color: yellow; */
-  height: 400px;
-}
-
-.circle-container {
-  /* background-color: pink; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  margin: auto;
+  height: auto;
+  max-width: 900px;
 }
 
 .circle-center {
@@ -126,7 +111,7 @@ blockquote {
   top: -0.9em;
   left: -0.9em;
   transform-origin: center;
-  animation: orbit 160s linear infinite;
+  /* animation: orbit 160s linear infinite; */
 }
 
 .circle-icon {
@@ -143,7 +128,7 @@ blockquote {
 .circle-icon img {
   width: 60%;
   margin: auto;
-  animation: orbit 160s linear reverse infinite;
+  /* animation: orbit 160s linear reverse infinite; */
 }
 
 /* Adjust the position of each .circle-icon around the .circle-center icon */
@@ -172,8 +157,61 @@ blockquote {
 }
 
 /* Add animation to .circle icons */
-@keyframes orbit {
+/* @keyframes orbit {
   100% {
     rotate: 1turn;
   }
+} */
+
+.circle-container {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: auto;
 }
+
+.icon-container {
+  /* background-color: blue; */
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.text-container {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+
+/* .service-text */
+.service-text {
+  text-align: left;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+sup {
+  font-size: 1rem;
+}
+
+
+/* FOOTER */
+footer {
+  font-size: 1rem;
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+
