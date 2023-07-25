@@ -387,4 +387,10 @@ html {
   overflow-x: hidden;
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+  [data-aos], [data-aos-duration] {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
