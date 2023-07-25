@@ -51,14 +51,14 @@
 <body>
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-body pt-md-4">
-      <div class="container-fluid custom-nav-width d-flex flex-row justify-content-between">
-        <a class="navbar-brand px-1" href="#">
+    <nav class="navbar navbar-expand-sm bg-body pt-md-4 mb-1 mb-sm-2 mb-lg-3">
+      <div class="container-fluid custom-nav-width d-flex flex-sm-column justify-content-between">
+        <a class="navbar-brand px-1 order-sm-2" href="#">
           <!-- LOGO -->
           <img src="./assets/logo/j-and-j-detailing_logo-light_transparent-bg.png" alt="J&J Detailing Logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler order-sm-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -81,7 +81,7 @@
     </nav>
   </header>
 
-  <main class="container-fluid">
+  <main class="container-fluid mb-3 mb-lg-5">
     <div class="row text-left p-3 custom-text-align">
       <!-- Hero Text -->
       <div class="hero container">
@@ -89,9 +89,13 @@
           From grime to shine, we make your ride divine!
         </h1>
         <p>
-          J&J Detailing, run by two young entrepreneurs, is on a mission to make your ride incredible! Experience a refreshed transformation for your car, providing you with an enjoyable travel experience. Currently, our services are exclusively available to residents of Red Oak,TX. 
+          J&J Detailing is a mobile vehicle cleaning service, owned by two young entrepreneurs. Experience a refreshed transformation for your car. 
+
+          Services are exclusively available to residents of Red Oak, TX. 
           <br>
-          <blockquote>Call or text us to schedule your next car detailing!</blockquote>
+          <blockquote>
+            Call or text us to schedule your next car detailing!
+          </blockquote>
         </p>
       </div>
     </div>
@@ -149,29 +153,50 @@
   </main>
 
   <!-- Service -->
-  <div id="service" class="container-fluid">
-    <div class="container circle-container">
-      <div class="circle-center">
-        <div class="circle-icon">
-          <img src="./assets/icons/bubbles.png" class="figure-img img-fluid rounded" alt="bubbles icon">
-        </div>
-        <div class="circle-icon">
-          <img src="./assets/icons/spray-bottle.png" class="figure-img img-fluid rounded" alt="spray bottle icon">
-        </div>
-        <div class="circle-icon">
-          <img src="./assets/icons/vaccum-cleaning.png" class="figure-img img-fluid rounded" alt="vacuum cleaning icon">
-        </div>
-        <div class="circle-icon">
-          <img src="./assets/icons/clean-wiping.png" class="figure-img img-fluid rounded" alt="clean wiping with sparkles icon">
-        </div>
-        <div class="circle-icon">
-          <img src="./assets/icons/clean-sparkles.png" class="figure-img img-fluid rounded" alt="sparkles icon">
-        </div>
-        <div class="circle-icon">
-          <img src="./assets/icons/car-wash-icon_light.png" class="figure-img img-fluid rounded" alt="car wash icon">
-        </div>
-      </div> <!-- .circle-center end -->
-    </div> <!-- .circle-container end -->
+  <div id="service" class="container-fluid d-flex flex-column flex-lg-row mt-lg-5 mb-3 mb-lg5">
+    <div class="container icon-container order-1 order-lg-2">
+      <div class="container circle-container">
+        <div class="circle-center">
+          <div class="circle-icon">
+            <img src="./assets/icons/bubbles.png" class="figure-img img-fluid rounded" alt="bubbles icon">
+          </div>
+          <div class="circle-icon">
+            <img src="./assets/icons/spray-bottle.png" class="figure-img img-fluid rounded" alt="spray bottle icon">
+          </div>
+          <div class="circle-icon">
+            <img src="./assets/icons/vaccum-cleaning.png" class="figure-img img-fluid rounded" alt="vacuum cleaning icon">
+          </div>
+          <div class="circle-icon">
+            <img src="./assets/icons/clean-wiping.png" class="figure-img img-fluid rounded" alt="clean wiping with sparkles icon">
+          </div>
+          <div class="circle-icon">
+            <img src="./assets/icons/clean-sparkles.png" class="figure-img img-fluid rounded" alt="sparkles icon">
+          </div>
+          <div class="circle-icon">
+            <img src="./assets/icons/car-wash-icon_light.png" class="figure-img img-fluid rounded" alt="car wash icon">
+          </div>
+        </div> <!-- .circle-center end -->
+      </div> <!-- .circle-container end -->
+    </div> <!-- .icon-container end -->
+
+    <div class="container d-flex  text-container order-2 order-lg-1">
+      <div class="container service-text">
+        <h3 class="mt-lg-3 mb-lg-5"><blockquote>
+          "To wash, or not to wash, that is the question."<sup>[1]</sup>
+        </blockquote></h3>
+        <p>
+          At J&J Detailing, we give your car the royal treatment it deserves. Our services include a thorough scrub to get rid of dirt, a wash for that fresh sparkle, a powerful vacuuming to keep the inside squeaky clean.
+        </p>
+        <p>
+          You have two options to get your car detailed just the way you like it. We can come to you with our mobile service, or you can drop off your car at our J&J Detailing location. If you choose the at-home option, we'll need access to a water spigot to hook up our pressure washer, and you'll be responsible for the water usage cost.
+        </p>
+
+        <p>
+          To book your next cleaning, just give us a call or shoot us a text. Don't miss out on the chance to enjoy a cleaned and rejuvenated ride!
+        </p>
+      </div> <!-- .service-text end -->
+    </div> <!-- .text-container end -->
+
   </div> <!-- #service end -->
 
   <div id="pricing">
@@ -181,6 +206,20 @@
   <div id="cta">
     <!-- Contact Information -->
   </div>
+
+  <!-- FOOTER -->
+  <footer>
+
+
+    <p>References:</p>
+    <ol>
+      <li>
+        Original quote from Shakespeare's Hamlet: "To be, or not to be, that is the question."
+      </li>
+    </ol>
+
+
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
