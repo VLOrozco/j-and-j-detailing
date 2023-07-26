@@ -54,12 +54,11 @@ main {
 .nav-link {
   font-size: 1.2em;
 }
-
-@media screen and (min-width: 575px) {
-  .nav-link {
-    font-size: 1.27em;
+  @media screen and (min-width: 575px) {
+    .nav-link {
+      font-size: 1.27em;
+    }
   }
-}
 
 .custom-nav-width {
   max-width: 1500px;
@@ -86,6 +85,9 @@ main {
   font-size: 1.6em;
   margin-bottom: 0.7em;
 }
+blockquote {
+  color: var(--primary-color);
+}
   @media screen and (min-width: 400px) {
     .hero h1 {
       font-size: 2.1em;
@@ -105,10 +107,6 @@ main {
       margin-bottom: 2em;
     }
   }
-
-blockquote {
-  color: var(--primary-color);
-}
 
 /* carousel */
 .carousel .carousel-inner img {
