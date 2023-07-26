@@ -49,7 +49,6 @@ main {
 
 .nav-btn {
   width: 100px;
-  margin-top: -0.3rem;
 }
 
 .nav-link {
@@ -252,6 +251,8 @@ sup {
   /* background-color: aqua; */
   height: auto;
   width: 100%;
+  position: relative;
+  margin-top: 7em;
 }
 
 .outer-pricing-container {
@@ -312,7 +313,7 @@ sup {
 
 .pricing-btn {
   height: 60px;
-  width: 150px;
+  width: 200px;
 }
 
 .btn-phone-call:hover {
@@ -338,7 +339,6 @@ footer {
   margin-bottom: 0;
   padding: 1em;
   height: auto;
-  position: relative;
 }
 
 .footer-logo-num {
@@ -357,23 +357,62 @@ footer {
   font-size: 1.15em;
 }
 
-.references {
-  /* background-color: lavender; */
-  max-width: 330px;
-  font-size: 0.8rem;
-  margin-top: 2em;
+p {
+  margin: 0;
 }
 
-@media screen and (min-width: 767px) {
-  .references {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    margin-top: 0;
+.hover-color:hover {
+  color: #2fe7af;
+}
+
+.footer-navbar {
+  /* background-color: white; */
+  width: 250px;
+  margin-top: 0.3em;
+}
+
+.footer-navbar ul li a {
+  font-size: 1em;
+}
+
+@media screen and (min-width: 750px) {
+  .footer-navbar ul li a {
+    font-size: 1.2em;
   }
 }
 
-.references p,
+
+.references {
+  background-color: lavender;
+  min-width: 260px;
+  max-width: 350px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: -7%;
+  left: 6%;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 589px) {
+  .references {
+    left: 7%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .references {
+    top: -13%;
+  }
+}
+@media screen and (min-width: 1009px) {
+  .references {
+    right: 32%;
+  }
+}
+
+.references p {
+  margin: 0;
+}
+
 ol {
   margin: 0;
 }
