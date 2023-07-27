@@ -431,3 +431,20 @@ html {
     opacity: 1 !important;
   }
 }
+
+/* Contact links */
+.call-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.set-appt {
+  width: 200px;
+  padding: 2em;
+}
+
+.call-us:hover {
+  color: var(--white-color);
+}
